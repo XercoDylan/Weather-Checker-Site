@@ -21,7 +21,7 @@ def get_weather():
                            feels_like = f"{weather_data["main"]["feels_like"]:.1f}"
                            )
     except Exception as error:
-        print(error)
+        print(error, flush=True)
         return render_template("ErorrWeather.html", 
                            title ="Enter Valid City", 
                            status = "", 
