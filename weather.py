@@ -4,8 +4,7 @@ import requests
 import os
 from pathlib import Path
 
-env_path = Path("/etc/secrets/.env")
-load_dotenv(dotenv_path=env_path)
+load_dotenv()
 
 
 def get_current_weather(city="Upper Marlboro"):
